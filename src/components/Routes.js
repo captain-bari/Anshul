@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Input, Menu, Segment } from 'semantic-ui-react'
 import Home from './Home';
 import Mail from './ContactUs';
-  
+import background from "../bg.jpg";
+import './homecss.css';
 
 export default class MenuExamplePointing extends Component {
   state = { activeItem: 'home' }
@@ -13,7 +14,7 @@ export default class MenuExamplePointing extends Component {
     const { activeItem } = this.state
 
     return (
-      <div>
+      <div className="back">
         
         <Menu pointing>
         

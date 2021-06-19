@@ -8,3 +8,13 @@ ul {
     font-size: 30px;
     color: green;
 }
+
+.foont {
+    font-family: 'Josefin Sans', cursive;
+}
+
+.back {
+    background: url('../bg.jpg') no-repeat;
+    background-size: 100%;
+    filter: alpha(opacity=40);
+}
