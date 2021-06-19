@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import ContactUs from './components/ContactUs';
+import Routes from './components/Routes';
+import Banner from './components/Banner'
 
 function App() {
   return (
     <div className="App">
-      <ContactUs/>
+      <Banner />
+      <Routes/>
     </div>
   );
 }
