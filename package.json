@@ -12,6 +12,8 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.1",
+    "react-phone-input-2": "^2.14.0",
+    "react-phone-number-input": "^3.1.23",
     "react-scripts": "4.0.3",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",

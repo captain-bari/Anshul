@@ -24,13 +24,23 @@ export default class MenuExamplePointing extends Component {
           />
     
           <Menu.Item
-            name='messages'
+            name='Subjects'
             active={activeItem === 'messages'}
             onClick={this.handleItemClick}
             />
 
           <Menu.Item
-            name='friends'
+            name='What we offer'
+            active={activeItem === 'friends'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='Become a Tutor'
+            active={activeItem === 'friends'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='Contact'
             active={activeItem === 'friends'}
             onClick={this.handleItemClick}
           />
