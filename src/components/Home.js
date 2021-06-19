@@ -41,7 +41,7 @@ return (
   <Form >
   <Row>
     <Col xs={3}> <InputGroup.Text id="basic-addon3">
-        Mobile Number :
+        Mobile Number
       </InputGroup.Text></Col>
     <Col Col xs={6}><PhoneInput placeholder="Enter phone number" value={value} onChange={setValue}/></Col>
   </Row><Row><br></br></Row>
@@ -60,11 +60,11 @@ return (
     </Row><Row><br></br></Row>
    
   <Row><Col xs={3}> <InputGroup.Text id="basic-addon3">
-        Book Slot here - &gt;
+        Book Slot here
       </InputGroup.Text></Col><Col Col xs={6}> <Datetime placeholder='book'/></Col></Row><Row><br></br></Row>
       <Row>
       <Col xs={3}><InputGroup.Text id="basic-addon3">
-        Remarks :
+        Remarks
       </InputGroup.Text></Col>
       <Col Col xs={6}><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
     </Row>
