@@ -35,7 +35,7 @@ return (
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get An Assured 'A' with US!</li>
   </ul></div>
   </Col>
-  <Col> <img src={line} width="1" height="450" /></Col><Col></Col><Col></Col><Col></Col>
+  <Col> <img src={line} width="1" height="450" /></Col>
   <Col  xs={5} align="left">
 
   <p className='contact'>Enter your Details and we will contact you!</p>
