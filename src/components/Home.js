@@ -7,12 +7,11 @@ import line from './line.png';
 import './homecss.css';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button'
-import {Divider } from 'semantic-ui-react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Datetime from 'react-datetime';
+import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 const Home =()=> 
 { 
 
@@ -21,12 +20,12 @@ useEffect(() => {
 }, []);
 
 const [value, setValue] = useState()
-
+const [open, setOpen] = React.useState(false)
 
 
 return ( 
 
-  <div align="left">
+  <div align="left" className="homeback">
 <Row>
   <Col xs={6}><div className='foont'><Row><br></br></Row>
   <ul className='li1'>
@@ -35,8 +34,8 @@ return (
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get An Assured 'A' with US!</li>
   </ul></div>
   </Col>
-  <Col> <img src={line} width="1" height="450" /></Col>
-  <Col  xs={5} align="left">
+  <Col xs={0.9}> <img src={line} width="1" height="450" /></Col>
+  <Col  xs={5} align="left" className="mleft">
 
   <p className='contact'>Enter your Details and we will contact you!</p>
   <Form >
@@ -68,18 +67,38 @@ return (
         Remarks :
       </InputGroup.Text></Col>
       <Col Col xs={6}><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
-    </Row><Row><br></br></Row>
-      <Form.Text>
-      Your details are safe with us. Here, on The Toppers Club, We respect your Privacy. Our subject experts will contact you personally on the Whatsapp number provided.
+    </Row>
+      <Form.Text className="disclamer">
+      ** Your details are safe with us. Here, on The Toppers Club, We respect your Privacy. Our subject experts will contact you personally on the Whatsapp number provided.
     </Form.Text>
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form>
-  </Col><Col></Col>
+</Form><Row><br></br></Row>
+<Modal
+      basic
+      onClose={() => setOpen(false)}
+      onOpen={() => setOpen(true)}
+      open={open}
+      size='fullscreen'
+      trigger={<Button primary>Submit</Button>}
+    >
+      <Header icon>
+        <Icon name='archive' />
+        Archive Old Messages
+      </Header>
+      <Modal.Content>
+        <p>
+          Your inbox is getting full, would you like us to enable automatic
+          archiving of old messages?
+        </p>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button basic color='blue' inverted onClick={() => setOpen(false)}>
+          <Icon name='checkmark' /> Ok
+        </Button>
+      </Modal.Actions>
+    </Modal>
+  </Col>
 </Row>
 
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 </div>
 )
 } 

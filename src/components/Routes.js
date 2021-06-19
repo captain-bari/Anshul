@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { Input, Menu, Segment } from 'semantic-ui-react'
 import Home from './Home';
 import Mail from './ContactUs';
+import Subjects from './Subjects';
+import Offer from './Offer.js';
+import Tutor from './Tutor';
+
 import background from "../bg.jpg";
 import './homecss.css';
 
@@ -26,23 +30,23 @@ export default class MenuExamplePointing extends Component {
     
           <Menu.Item
             name='Subjects'
-            active={activeItem === 'messages'}
+            active={activeItem === 'Subjects'}
             onClick={this.handleItemClick}
             />
 
           <Menu.Item
             name='What we offer'
-            active={activeItem === 'friends'}
+            active={activeItem === 'What we offer'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
             name='Become a Tutor'
-            active={activeItem === 'friends'}
+            active={activeItem === 'Tutor'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
             name='Contact'
-            active={activeItem === 'friends'}
+            active={activeItem === 'Contact'}
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>
@@ -53,7 +57,10 @@ export default class MenuExamplePointing extends Component {
         </Menu>
 
         {this.state.activeItem == "home" ? (<Home/>) : (<div></div>)}
-        {this.state.activeItem == "messages" ? (<Mail/>): (<div></div>) }
+        {this.state.activeItem == "Subjects" ? (<Subjects/>): (<div></div>) }
+        {this.state.activeItem == "Become a Tutor" ? (<Tutor/>): (<div></div>) }
+        {this.state.activeItem == "What we offer" ? (<Offer/>): (<div></div>) }
+        {this.state.activeItem == "Contact" ? (<Mail/>): (<div></div>) }
 
       </div>
     )

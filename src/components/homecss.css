@@ -9,12 +9,44 @@ ul {
     color: green;
 }
 
+.tables {
+    font-size: 15px;
+}
+
+.thead{
+    font-size: 15px;
+}
+
+.disclamer {
+    font-size: 14px;
+}
+
 .foont {
     font-family: 'Josefin Sans', cursive;
 }
 
 .back {
-    background: url('../bg3.jpg') no-repeat;
+    background: url('./wbg1.png') repeat;
     background-size: 100%;
     filter: alpha(opacity=40);
+}
+
+.homeback {
+    background: url('./wbg1.png') repeat;
+    background-size: 100%;
+    filter: alpha(opacity=40);
+}
+
+.bannerback {
+    background: url('./wbg3.jpg') repeat;
+    background-size: 100%;
+    filter: alpha(opacity=40);
+}
+
+.mleft {
+    margin-left: 30px;
+}
+
+mright {
+    margin-left: 30px;
 }
