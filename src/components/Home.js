@@ -37,7 +37,7 @@ const changeDate = (event) => {
   setValue2(event.toDate())
 }
 const send = () => {
-  if(sent == false){
+  if(sent == false && value != undefined){
     data.mobile = value;
     data.from_name = document.getElementById("basic-email").value;
     data.from_subject = document.getElementById("basic-subject").value;
@@ -50,6 +50,10 @@ const send = () => {
       console.log(error.text);
     });
     setsent(true);
+  } else {
+    if (value == undefined){alert("Make sure you have entered Mobile number")}
+    else {alert("We have alreay captured your information. Please refresh page to Resend it.")}
+    
   }
 }
 

@@ -38,7 +38,6 @@ const changeDate = (event) => {
 }
 const send = () => {
   if(sent == false && value != undefined){
-    alert("sending")
     data.mobile = value;
     data.from_name = document.getElementById("basic-email").value;
     data.from_subject = document.getElementById("basic-subject").value;
