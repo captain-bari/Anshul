@@ -5,20 +5,28 @@ import Mail from './ContactUs';
 import Subjects from './Subjects';
 import Offer from './Offer.js';
 import Tutor from './Tutor';
-
-import background from "../bg.jpg";
+import mainLogo from './3.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 import './homecss.css';
 
 export default class MenuExamplePointing extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleClick = () => this.setState({ activeItem: "home" })
 
   render() {
     const { activeItem } = this.state
 
     return (
       <div className="back">
+
+<div align="left" className = "bannerback" onClick={this.handleClick}>
+  <Row>
+    <Col><img src={mainLogo} width="400" height="150" style={{ verticalAlign: "left"}} /></Col><Col></Col><Col></Col>
+  </Row>
+  </div>
         
         <Menu pointing>
         

@@ -25,20 +25,33 @@ ul {
     font-family: 'Josefin Sans', cursive;
 }
 
+.tutor {
+    font-family: 'Josefin Sans', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tutorback {
+    background-color: #ffffff;
+}
+
 .back {
-    background: url('./wbg0.png') repeat;
+    /* background: url('./wbg0.png') repeat; */
+    background-color: #ffffff;
     background-size: 100%;
     filter: alpha(opacity=40);
 }
 
 .homeback {
-    background: url('./wbg1.png') repeat;
+    /* background: url('./wbg1.png') repeat; */
+    background-color: #ffffff;
     background-size: 100%;
     filter: alpha(opacity=40);
 }
 
 .bannerback {
-    background: url('./wbg3.jpg') repeat;
+    /* background: url('./wbg3.jpg') repeat; */
+    background-color: #8f8f8f;
     background-size: 100%;
     filter: alpha(opacity=40);
 }
@@ -49,4 +62,8 @@ ul {
 
 mright {
     margin-left: 30px;
+}
+
+.onhover:hover{
+    background-color: #8f8f8f;
 }
