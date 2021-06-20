@@ -1,14 +1,12 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './homecss.css';
 
 const BasicTable = () => {
   return (
-      <div>
-          <Row><Col></Col>
-    <Col xs={7}><Table striped bordered hover variant="dark" >
+      <div className = "subjectback">
+        <div className = "subjecttable">
+          <Table striped bordered hover variant="dark" >
     <thead align="left">
       <tr>
         <th>Department</th>
@@ -163,10 +161,7 @@ const BasicTable = () => {
       </tr>
     </tbody>
   </Table>
-  </Col>
-  <Col></Col>
-  </Row>
-  </div>
+  </div></div>
   );
 }
 

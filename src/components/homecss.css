@@ -51,13 +51,16 @@ ul {
 
 .bannerback {
     /* background: url('./wbg3.jpg') repeat; */
-    background-color: #ffffff;
+    background-color: #bdbdbd;
     background-size: 100%;
     filter: alpha(opacity=40);
+    /* position: fixed;
+    top: 0;
+    width: 100% */
 }
 
 .bannerback:hover {
-    background-color:#bdbdbd
+    background-color:#888a85
 }
 
 
@@ -75,4 +78,15 @@ ul {
 
 .onhover:hover{
     background-color: #8f8f8f;
+}
+
+.subjectback {
+    
+    background: url('../bg3.jpg') repeat;
+    background-size: 100%;
+}
+
+.subjecttable {
+    margin-left: 18%;
+    margin-right:18%;
 }

@@ -9,6 +9,7 @@ import mainLogo from './4.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import './homecss.css';
+import NavbarPage from './dash'
 
 export default class MenuExamplePointing extends Component {
   state = { activeItem: 'home' }
@@ -27,6 +28,7 @@ export default class MenuExamplePointing extends Component {
     <Col><img src={mainLogo} width="400" height="150" style={{ verticalAlign: "left"}} /></Col><Col></Col><Col></Col>
   </Row>
   </div>
+  <NavbarPage/>
         
         <Menu pointing>
         
