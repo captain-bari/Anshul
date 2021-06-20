@@ -1,102 +1,31 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './homecss.css';
+import img1 from './img1.png';
+import img2 from './img1.png';
+import img3 from './img1.png';
+import img4 from './img1.png';
+import img5 from './img1.png';
+import img6 from './img1.png';
+import cartoon from './cartoon.png';
 
 const Tutor = () => {
   return (
       <div >
-          <Row><Col></Col><Col  xs={4}>
-          <Table striped bordered hover variant="dark" >
-    <thead align="left">
-      <tr >
-        <th className="thead">Department</th>
-        <th className="thead">Subjects</th>
-      </tr>
-    </thead>
-    <tbody align="left">
-      <tr >
-        <td >Physics</td>
-        <td><ul className="tables">
-        <li>Physics-1</li>
-        <li>Physics-2</li>
-        <li>Physics-3</li>
-        <li>Classical Physics</li>
-        <li>Optics</li>
-        <li>Electromagnetic Theory</li>
-        <li>Quantum Physics</li>
-        <li>Algebra Based Physics</li>
-        <li>General Physics</li>
-        <li>Solid State Physics</li>
-        <li>Calculus Based Physics</li>
-        <li>Modern Physics</li>
-        <li>Thermodynamics </li> 
-        </ul></td>
-      </tr>
-
-      <tr>
-        <td>Chemistry</td>
-        <td><ul className="tables">
-        <li>Chemistry-1</li>
-        <li>Chemistry-2</li>
-        <li>Chemistry-3</li>
-        <li>Inorganic Chemistry</li>
-        <li>Analytical Chemistry</li>
-        <li>Organic Chemistry</li>
-        <li>Physical Chemistry</li>
-        <li>General Chemistry</li>
-        <li>Environmental Chemistry</li>
-        </ul></td>
-      </tr>
-    </tbody>
-  </Table>
-          </Col><Col></Col>
-    <Col  xs={4}><Table striped bordered hover variant="dark" >
-    <thead align="left">
-      <tr>
-        <th>Department</th>
-        <th>Subjects</th>
-      </tr>
-    </thead>
-    <tbody align="left">
-      <tr >
-        <td>Maths</td>
-        <td><ul className="tables">
-        <li>Calculus-A / Calculus-1</li>
-        <li>Calculus B / Calculus-2</li>
-        <li> Calculus-C / Calculus-3</li>
-        <li>  Precalculus</li>
-        <li>  Differential Equations</li>
-        <li>  Basic Algebra</li>
-        <li>  College Algebra</li>
-        <li>  Linear systems</li>
-        <li>Probability</li>
-        <li>Statistics</li>
-        <li>Trigonometry</li>
-        <li>Geometry
- </li> 
-        </ul></td>
-      </tr>
-
-      <tr>
-        <td>Chemistry</td>
-        <td><ul className="tables">
-        <li>Chemistry-1</li>
-        <li>Chemistry-2</li>
-        <li>Chemistry-3</li>
-        <li>Inorganic Chemistry</li>
-        <li>Analytical Chemistry</li>
-        <li>Organic Chemistry</li>
-        <li>Physical Chemistry</li>
-        <li>General Chemistry</li>
-        <li>Environmental Chemistry</li>
-        </ul></td>
-      </tr>
-    </tbody>
-  </Table>
-  </Col><Col></Col>
-  </Row>
+          <Row>
+            <Col><img src={img1} width="300" height="300" /><div>Make Extra Money</div></Col>
+            <Col><img src={img2} width="300" height="300" /><div>Flexible Schedule</div></Col>
+            <Col><img src={img3} width="300" height="300" /><div>Enhance you Skills</div></Col>
+          </Row><Row><br></br></Row>
+          <Row>
+            <Col><img src={img4} width="300" height="300" /><div>Super Convinient</div></Col>
+            <Col><img src={img5} width="300" height="300" /><div>Follow Your Passion</div></Col>
+            <Col><img src={img6} width="300" height="300" /><div>Find Your Pursose</div></Col>
+          </Row>
+          <Row>
+            <Col><img src={cartoon} width="1400" height="500" /></Col>
+          </Row>
   </div>
   );
 }

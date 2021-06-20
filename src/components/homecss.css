@@ -26,7 +26,7 @@ ul {
 }
 
 .back {
-    background: url('./wbg1.png') repeat;
+    background: url('./wbg0.png') repeat;
     background-size: 100%;
     filter: alpha(opacity=40);
 }

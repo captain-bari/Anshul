@@ -82,12 +82,11 @@ return (
     >
       <Header icon>
         <Icon name='archive' />
-        Archive Old Messages
+        Thank You!
       </Header>
       <Modal.Content>
         <p>
-          Your inbox is getting full, would you like us to enable automatic
-          archiving of old messages?
+        We have received your information. Your details are safe with us. Here, on The Toppers Club, We respect your Privacy. Our subject experts will contact you soon personally on the Whatsapp number provided.
         </p>
       </Modal.Content>
       <Modal.Actions>
