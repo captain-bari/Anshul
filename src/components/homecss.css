@@ -76,6 +76,10 @@ ul {
     margin-right: 20px;
 }
 
+.jumboleft {
+    margin-left: 30px;
+}
+
 .onhover:hover{
     background-color: #8f8f8f;
 }
