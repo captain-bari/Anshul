@@ -128,15 +128,6 @@ const send = () => {
       </Modal.Actions>
     </Modal>
       </Col><Col></Col></Row>
-  
-        <input type="text" onChange={(e) => {
-                setMail(e.target.value);
-              }}  placeholder="Prove your email address"/>
-              <br></br><br></br>
-        <input type="textarea" onChange={(e) => {
-                setMessage(e.target.value);
-              }}  placeholder="Type your Message" />
-        <input type="button" value="send" onClick={sen}/>
     </div>
   );
 }
