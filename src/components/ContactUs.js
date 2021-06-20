@@ -38,6 +38,7 @@ const changeDate = (event) => {
 }
 const send = () => {
   if(sent == false && value != undefined){
+    setOpen(true)
     data.mobile = value;
     data.from_name = document.getElementById("basic-email").value;
     data.from_subject = document.getElementById("basic-subject").value;
@@ -101,7 +102,7 @@ const send = () => {
 <Modal
       basic
       onClose={() => setOpen(false)}
-      onOpen={() => {send(); setOpen(true)}}
+      onOpen={() => {send()}}
       open={open}
       size='fullscreen'
       trigger={<Button primary>Submit</Button>}
