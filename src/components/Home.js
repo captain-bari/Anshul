@@ -27,15 +27,15 @@ return (
 
   <div align="left" className="homeback">
 <Row>
-  <Col xs={6}><div className='foont'><Row><br></br></Row>
+  <Col ><div className='foont'><Row><br></br></Row>
   <ul className='li1'>
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get 24x7 Online Help</li>
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Subject expert for best guidance</li>
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get An Assured 'A' with US!</li>
   </ul></div>
   </Col>
-  <Col xs={0.9}> <img src={line} width="1" height="450" /></Col>
-  <Col  xs={5} align="left" className="mleft">
+  {/* <Col xs={0.9}> <img src={line} width="1" height="450" /></Col> */}
+  <Col align="left" className="mleft">
 
   <p className='contact'>Enter your Details and we will contact you!</p>
   <Form >

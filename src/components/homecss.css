@@ -51,10 +51,15 @@ ul {
 
 .bannerback {
     /* background: url('./wbg3.jpg') repeat; */
-    background-color: #8f8f8f;
+    background-color: #ffffff;
     background-size: 100%;
     filter: alpha(opacity=40);
 }
+
+.bannerback:hover {
+    background-color:#bdbdbd
+}
+
 
 .mleft {
     margin-left: 30px;

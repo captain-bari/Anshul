@@ -5,7 +5,7 @@ import Mail from './ContactUs';
 import Subjects from './Subjects';
 import Offer from './Offer.js';
 import Tutor from './Tutor';
-import mainLogo from './3.png';
+import mainLogo from './4.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import './homecss.css';
