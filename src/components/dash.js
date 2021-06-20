@@ -42,7 +42,7 @@ render() {
     <Router>
       <MDBNavbar color="grey" dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text">The Topers Club</strong>
+          <strong className="white-text">The Toppers Club</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
