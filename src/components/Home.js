@@ -12,6 +12,7 @@ import 'react-phone-input-2/lib/style.css'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Datetime from 'react-datetime';
 import { Button, Header, Icon, Modal } from 'semantic-ui-react'
+import Jumbotron from 'react-bootstrap/Jumbotron'
 const Home =()=> 
 { 
 
@@ -36,37 +37,37 @@ return (
   </Col>
   {/* <Col xs={0.9}> <img src={line} width="1" height="450" /></Col> */}
   <Col align="left" className="mleft">
-
+  <Jumbotron className="jumboright">
   <p className='contact'>Enter your Details and we will contact you!</p>
   <Form >
   <Row>
-    <Col xs={3}> <InputGroup.Text id="basic-addon3">
+    <Col > <InputGroup.Text id="basic-addon3">
         Mobile Number
       </InputGroup.Text></Col>
-    <Col Col xs={6}><PhoneInput placeholder="Enter phone number" value={value} onChange={setValue}/></Col>
+    <Col ><PhoneInput placeholder="Enter phone number" value={value} onChange={setValue}/></Col>
   </Row><Row><br></br></Row>
     <Row>
-      <Col xs={3}><InputGroup.Text id="basic-addon3">
+      <Col ><InputGroup.Text id="basic-addon3">
       Email address
       </InputGroup.Text></Col>
-      <Col Col xs={6}> <FormControl id="basic-url" aria-describedby="basic-addon3" placeholder='Enter Email Address'  className="smaller-input"/></Col><Col></Col>
+      <Col> <FormControl id="basic-url" aria-describedby="basic-addon3" placeholder='Enter Email Address'  className="smaller-input"/></Col>
     </Row><Row><br></br></Row>
      
     <Row>
-      <Col xs={3}><InputGroup.Text id="basic-addon3">
+      <Col ><InputGroup.Text id="basic-addon3">
         Subject Name
       </InputGroup.Text></Col>
-      <Col Col xs={6}><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
+      <Col><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
     </Row><Row><br></br></Row>
    
-  <Row><Col xs={3}> <InputGroup.Text id="basic-addon3">
+  <Row><Col> <InputGroup.Text id="basic-addon3">
         Book Slot here
       </InputGroup.Text></Col><Col Col xs={6}> <Datetime placeholder='book'/></Col></Row><Row><br></br></Row>
       <Row>
-      <Col xs={3}><InputGroup.Text id="basic-addon3">
+      <Col ><InputGroup.Text id="basic-addon3">
         Remarks
       </InputGroup.Text></Col>
-      <Col Col xs={6}><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
+      <Col><FormControl id="basic-url" aria-describedby="basic-addon3" /></Col>
     </Row>
       <Form.Text className="disclamer">
       ** Your details are safe with us. Here, on The Toppers Club, We respect your Privacy. Our subject experts will contact you personally on the Whatsapp number provided.
@@ -90,11 +91,12 @@ return (
         </p>
       </Modal.Content>
       <Modal.Actions>
-        <Button basic color='blue' inverted onClick={() => setOpen(false)}>
+      <Button basic color='blue' inverted onClick={() => setOpen(false)}>
           <Icon name='checkmark' /> Ok
         </Button>
       </Modal.Actions>
     </Modal>
+</Jumbotron>
   </Col>
 </Row>
 

@@ -65,8 +65,12 @@ ul {
     margin-left: 30px;
 }
 
-mright {
+.mright {
     margin-left: 30px;
+}
+
+.jumboright {
+    margin-right: 20px;
 }
 
 .onhover:hover{
