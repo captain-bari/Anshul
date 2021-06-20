@@ -24,9 +24,9 @@ const Tutor = () => {
             <Col><img src={img5} width="250" height="250" /><div>Follow Your Passion</div></Col>
             <Col><img src={img6} width="250" height="250" /><div>Find Your Purpose</div></Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col><img src={cartoon} width="1400" height="500" /></Col>
-          </Row>
+          </Row> */}
           </div>
   </div>
   );
