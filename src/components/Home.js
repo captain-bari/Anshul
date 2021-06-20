@@ -28,7 +28,6 @@ return (
 
   <div align="left" className="homeback">
 <Row>
-  <Jumbotron className="jumboleft">
   <Col ><div className='foont'><Row><br></br></Row>
   <ul className='li1'>
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get 24x7 Online Help</li>
@@ -36,7 +35,6 @@ return (
     <li><img src={arrow} width="60" height="60" />&nbsp;&nbsp;Get An Assured 'A' with US!</li>
   </ul></div>
   </Col>
-  </Jumbotron>
   {/* <Col xs={0.9}> <img src={line} width="1" height="450" /></Col> */}
   <Col align="left" className="mleft">
   <Jumbotron className="jumboright">
