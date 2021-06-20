@@ -23,7 +23,7 @@ state = {
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
-handleClick = () => this.setState({ activeItem: "home" ,isOpen: !this.state.isOpen })
+handleClick = () => this.setState({ activeItem: "home" })
 clickHome = () => this.setState({ activeItem: "home"  ,isOpen: !this.state.isOpen})
 clickSubject = () => this.setState({ activeItem: "Subjects"  ,isOpen: !this.state.isOpen})
 clickOffer = () => this.setState({ activeItem: "What we offer" ,isOpen: !this.state.isOpen })
