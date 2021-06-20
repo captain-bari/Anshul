@@ -23,12 +23,12 @@ state = {
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
-handleClick = () => this.setState({ activeItem: "home" })
-clickHome = () => this.setState({ activeItem: "home" })
-clickSubject = () => this.setState({ activeItem: "Subjects" })
-clickOffer = () => this.setState({ activeItem: "What we offer" })
-clickTutor = () => this.setState({ activeItem: "Become a Tutor" })
-clickContact = () => this.setState({ activeItem: "Contact" })
+handleClick = () => this.setState({ activeItem: "home" ,isOpen: !this.state.isOpen })
+clickHome = () => this.setState({ activeItem: "home"  ,isOpen: !this.state.isOpen})
+clickSubject = () => this.setState({ activeItem: "Subjects"  ,isOpen: !this.state.isOpen})
+clickOffer = () => this.setState({ activeItem: "What we offer" ,isOpen: !this.state.isOpen })
+clickTutor = () => this.setState({ activeItem: "Become a Tutor"  ,isOpen: !this.state.isOpen})
+clickContact = () => this.setState({ activeItem: "Contact"  ,isOpen: !this.state.isOpen})
 
 
 render() {
