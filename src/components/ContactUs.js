@@ -65,7 +65,7 @@ const send = () => {
    
   return (
     <div>
-      <Row><Col xs={5} align="left" className="mleft">
+      <Row><Col align="left" className="mleft">
           
   <p className='contact'>Enter your Details and we will contact you!</p>
   <Form >
